@@ -1,0 +1,41 @@
+@keyframes animate-border {
+    0% {
+          width: 0%;
+    }
+    100%{
+          width: 100%;
+    }
+}
+
+.animated-title
+{
+    position: relative;
+    width: fit-content;
+    color: var(--primary-font-color);
+    /*font-weight: 500;*/
+    margin:10px auto;
+    padding:5px;
+    font-size: 1.5rem;
+    line-height: 32px;
+    text-shadow: -2px 2px 2px var(--secondary-box-shadow);
+}
+
+.animated-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 3px solid var(--primary-dark-pink);
+    animation: animate-border 0.3s ease-in;
+}
+
+.sub-heading {
+    margin: 10px auto;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}

@@ -1,0 +1,72 @@
+.sub-paragraph-container
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.heading {
+    width: fit-content;
+  }
+  
+  .heading h2 {
+    text-transform: uppercase;
+    color: var(--primary-font-color);
+    margin-bottom: 0.75rem;
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .heading h2:after {
+    position: absolute;
+    content: "";
+    height: 3.5px;
+    bottom: -3px;
+    margin: 0 auto;
+    left: 0;
+    width: 50%;
+    background: var(--primary-form-header-color);
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .heading h2:hover:after {
+    width: 100%;
+    background: var(--primary-form-header-color);
+  }
+
+.sub-paragraph
+{
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.app-main-image
+{
+	box-shadow: 1px 1px 10px 1px #979595;
+	width: 70%;
+	height: 400px;
+	object-fit: cover;
+	margin: 30px auto;
+	display: block;
+	transition: all .2s ease-in-out;
+}
+
+.app-main-image:hover
+{
+	transform: scale(1.03); 
+	cursor:pointer;	
+}
+
+@media screen and (max-width:540px)
+{
+	.app-main-image
+	{
+		width: 95%;
+	}
+}
